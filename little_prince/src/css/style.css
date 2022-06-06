@@ -1,0 +1,17 @@
+body {
+    background-color: khaki;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.red {
+    text-align: center;
+    color: red;
+}
+
+span {
+    font-style: italic;
+}
