@@ -5,13 +5,18 @@
 }
 
 .container {
+    position: relative;
     max-width: 960px;
     margin: 0 auto; 
     padding: 0;
 }
 
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/advantages';
-@import 'blocks/header';
-@import 'blocks/buttons';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
 @import 'base/media';

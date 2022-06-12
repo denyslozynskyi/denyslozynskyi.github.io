@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
         <title>Pulse</title>
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
         <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -50,45 +51,82 @@
                         или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <main>
             <section class="advantages">
                 <div class="container">
-                    <h2 class="advantages__header">НАШИ ПРЕИМУЩЕСТВА</h2>
+                    <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
                     <div class="advantages__wrapper">
                         <div class="advantages__item">
-                            <div class="advantages__item_icon">
+                            <div class="advantages__icon">
                                 <img src="icons/advantages/cup.png" alt="cup icon">
                             </div>
-                            <div class="advantages__item_header">Делимся опытом</div>
-                            <div class="advantages__item_text">
+                            <div class="advantages__subheader">Делимся опытом</div>
+                            <div class="advantages__text">
                                 Наши сотрудники всегда готовы поделиться своим опытом,<br>так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                             </div>
                         </div>
                         <div class="advantages__item">
-                            <div class="advantages__item_icon">
+                            <div class="advantages__icon">
                                 <img src="icons/advantages/heart.png" alt="heart icon">
                             </div>
-                            <div class="advantages__item_header">Заботимся о здоровье</div>
-                            <div class="advantages__item_text">
+                            <div class="advantages__subheader">Заботимся о здоровье</div>
+                            <div class="advantages__text">
                                 Мы работаем для того,<br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                             </div>
                         </div>
                         <div class="advantages__item">
-                            <div class="advantages__item_icon">
+                            <div class="advantages__icon">
                                 <img src="icons/advantages/shoe.png" alt="shoe icon">
                             </div>
-                            <div class="advantages__item_header">Учим бегать</div>
-                            <div class="advantages__item_text">
+                            <div class="advantages__subheader">Учим бегать</div>
+                            <div class="advantages__text">
                                 Помогаем с обучением<br>правильной технике бега!<br>Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="consultation">
+                <div class="container">
+                    <h2 class="title title_left">Получите бесплатную консультацию<br>по подбору пульсометра</h2>
+                    <div class="consultation__descr">
+                        Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
+                    </div>
+
+                    <form class="feed-form" action="#">
+                        <input type="text" placeholder="Ваше имя" required name="name">
+                        <input type="tel" placeholder="Ваш телефон" required name="phone">
+                        <input type="email" placeholder="Ваш E-mail" required name="email">
+
+                        <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="carousel">
+                <div class="container">
+                    <div class="carousel__inner">
+                        <div>
+                            <img src="img/slide_1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide_2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class="prev"><img src="icons/left.svg"></button>
+                    <button type="button" class="next"><img src="icons/right.svg"></button>
+                </div>
+            </section>
         </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
