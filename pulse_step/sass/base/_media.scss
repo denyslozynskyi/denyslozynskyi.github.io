@@ -55,6 +55,20 @@
             font-size: 25px;
         }
     }
+
+    .carousel {
+        .tns-item {
+            img {
+                max-width: 500px;
+            }
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -90,6 +104,11 @@
         &_submit {
             width: 100%;
             height: 30px;
+        }
+        &_mini {
+            width: 250px;
+            height: 40px;
+            font-size: 25px;
         }
     }
 
@@ -163,6 +182,23 @@
     .carousel {
         padding: 30px 0;
     }
+
+    .catalog {
+        &__tab {
+            width: 30%;
+            font-size: 14px;
+        }
+        &-item {
+            width: 100%;
+            &__descr {
+                width: 70%;
+                margin: 0 auto;
+            }
+        &__footer {
+                justify-content: space-around;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -216,6 +252,13 @@
         }
     }
 
+    .button {
+        &_mini {
+            width: 90%;
+
+        }
+    }
+
     .advantages {
         &__wrapper {
             margin-top: 0;
@@ -257,6 +300,53 @@
         font-size: 14px;
         &_left {
             font-size: 12px;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            width: 70%;
+        }
+        &__content {
+            margin-top: 20px;
+        }
+        &-item {
+            width: 250px;
+            &__subtitle {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+            &__descr {
+                font-size: 10px;
+            }
+            &__link {
+                font-size: 20px;
+            }
+            &__back {
+                font-size: 20px;
+            }
+            &__list {
+                li {
+                    font-size: 10px;
+                }
+            }
+            &__footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+            &__old-price {
+                font-size: 12px;
+            }
+            &__price {
+                font-size: 16px;
+            }
+        }
+        hr {
+            margin: 10px 0;
         }
     }
 }
