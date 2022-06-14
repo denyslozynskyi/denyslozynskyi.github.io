@@ -1,0 +1,49 @@
+.feedback {
+    min-height: 920px;
+    padding-bottom: 52px;
+    &__img {
+        max-width: 169px;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__comments {
+        margin-top: 60px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &__comment {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+    &__content {
+        width: 75%;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: #646464;
+    }
+    &__text {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0D0D0D;
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
