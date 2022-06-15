@@ -429,5 +429,16 @@
             width: 100%;
         }
     }
+
+    .modal {
+        padding: 20px;
+        min-height: 250px;
+        width: 80%;
+        &__close {
+            font-size: 20px;
+            top: 5px;
+            right: 15px;
+        }
+    }
 }
 

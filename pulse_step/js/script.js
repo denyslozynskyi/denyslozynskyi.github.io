@@ -46,4 +46,68 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    // Modal
+
+    $('[data-modal = consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.overlay, .modal').fadeOut();
+    });
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: 'required',
+                phone: 'required',
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: 'Пожалуйста, ввведите Ваше имя',
+                phone: 'Пожалуйста, ввведите Ваш мобильный телефон',
+                email: {
+                    required: 'Пожалуйста, введите Вашу электронную почту',
+                    email: 'Электронная почта должна иметь формат email@domain.com '
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name = phone]').mask('+7 (999) 999-99-99');
+
+    $(form).submit(function(e) {
+        e.preventDefault();
+        
+        if (!$(this).valid()) {
+            return;
+        };
+        
+        $.ajax({
+            type: 'POST',
+            url: '../mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find('input').val('');
+
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
