@@ -10,6 +10,14 @@
         width: 270px;
         text-align: center;
     }
+    &__icon {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
     &__subheader {
         margin-top: 35px;
         font-weight: 700;

@@ -142,14 +142,15 @@
             margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
-            transition: .3 all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style: none;
             transition: .5s all;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0;
+            }
+            ul {
+                padding-left: 0;
             }
             li {
                 position: relative;
