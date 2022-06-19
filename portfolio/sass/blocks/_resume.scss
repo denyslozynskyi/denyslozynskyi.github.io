@@ -1,0 +1,89 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        padding-top: 6px;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 65px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        justify-content: space-between;
+    }
+    &__column {
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            @include before_circle;
+            &:before {
+                width: 15px;
+                height: 15px;
+                top: 25%;
+                left: -7px;
+            }
+        }
+        ul {
+            list-style: none;
+            padding-left: 35px;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: -35px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: realtive;
+        &:before {
+            position: absolute;
+            top: 65px;
+            left: -35px;
+            content: '';
+            width: 35px;
+            height: 1px;
+            background-color: #000;
+        }
+        &-head {
+            padding: 45px 60px 0 0;
+            display: grid;
+            grid-template-columns: 37px 236px;
+            grid-template-rows: 21px 18px;
+            gap: 0 19px;
+        }
+        &-body {
+            padding-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon {
+            position: relative;
+            grid-row: 1 / 3;
+            padding: 14px 0 0 17px; 
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
