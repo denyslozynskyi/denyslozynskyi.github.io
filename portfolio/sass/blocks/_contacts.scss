@@ -9,6 +9,8 @@
     &__photo {
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__title {
@@ -64,6 +66,25 @@
             border: 1px solid #000;
         }
         @include label;
+    }
+    &__triggers {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 35px;
+        align-items: center;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        input {
+            width: 11px;
+            height: 11px;
+        }
     }
     &__btn {
         border: none;

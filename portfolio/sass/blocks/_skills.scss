@@ -14,7 +14,7 @@
     &__subtitle {
         text-align: center;
     }
-    &-wrapper {
+    &__wrapper {
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 270px);
@@ -26,6 +26,9 @@
     &-item {
         border: 1px solid #000;
         padding: 30px;
+        &__img {
+            height: 65px;
+        }
         &__title {
             margin-top: 20px;
         }

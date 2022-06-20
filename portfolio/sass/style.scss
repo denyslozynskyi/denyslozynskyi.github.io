@@ -11,7 +11,7 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -34,3 +34,4 @@
 @import 'blocks/portfolio';
 @import 'blocks/pricelist';
 @import 'blocks/contacts';
+@import 'base/media';

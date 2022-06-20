@@ -4,8 +4,9 @@
         display: grid;
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(2, 70px);
+        justify-content: space-between;
         grid-auto-rows: 70px;
-        gap: 30px 45px;
+        gap: 30px 0;
     }
     &__head {
         display: flex;
